@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./countries.js"></script>
+    <title>Countries Search</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <h1>Countries Search</h1>
+      <div id="search-form">
+        <div>Choose the type of search:</div>
+        <div id="search-type">
+          <div>
+            <input type="radio" id="radio-region" name="type-of-search" onclick="switchRadio(getRegionsList)">
+            <label for="radio-region">By Region</label>
+          </div>
+          <div>
+            <input type="radio" id="radio-language" name="type-of-search" onclick="switchRadio(getLanguagesList)">
+            <label for="radio-language">By Language</label>
+          </div>
+        </div>
+        <div>Choose search query:</div>
+        <div>
+          <select name="search-select" id="search-select" disabled>
+            <option>Select value</option>
+          </select>
+        </div>
+      </div>
+      <table></table>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
